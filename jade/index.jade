@@ -1,0 +1,35 @@
+html(lang="en")
+	head
+	title TIC TAC TOE
+	meta(charset='utf-8')
+	meta(http-equiv='X-UA-Compatible' content='IE=edge')
+	meta(name='viewport' content='width=device-width, initial-scale=1')
+	link(href='http://fonts.googleapis.com/css?family=Pacifico:400,700', rel='stylesheet', type='text/css')
+	link(rel='stylesheet' href='../css/bootstrap.min.css')
+	link(rel='stylesheet' href='../css/main.css')
+	body
+		.container
+			h1.text-center TIC TAC TOE
+			hr
+			.text-center.well
+					ul.tablero
+						li#p1.btn.btn-lg.btn-default.casilla(type="button") +
+						li#p2.btn.btn-lg.btn-default.casilla(type="button") +
+						li#p3.btn.btn-lg.btn-default.casilla(type="button") +
+					ul.tablero
+						li#p4.btn.btn-lg.btn-default.casilla(type="button") +
+						li#p5.btn.btn-lg.btn-default.casilla(type="button") +
+						li#p6.btn.btn-lg.btn-default.casilla(type="button") +
+					ul.tablero
+						li#p7.btn.btn-lg.btn-default.casilla(type="button") +
+						li#p8.btn.btn-lg.btn-default.casilla(type="button") +
+						li#p9.btn.btn-lg.btn-default.casilla(type="button") +
+			hr
+			.text-center
+				p
+					#nuevojuego.btn.btn-primary New game
+				p#mensaje.alert.alert-info Ganó jugador: 
+					span#jugador
+		script(src='http://code.jquery.com/jquery-1.11.2.min.js')
+		script(type='text/javascript', src='../js/bootstrap.min.js')
+		script(type='text/javascript' src='../js/main.js')
